@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.loginForm{
+    background-image: url("./img/bgLayer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    
+    border: 10px solid #dcdcdc;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    
+}
+.loginForm__wrapper{
+   width: 100%;
+   margin: 0 auto;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+}
+
+.btn{
+    position: absolute;
+    z-index: 1000;
+    right:15px;
+    top: 70px;
+    
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    cursor: pointer;
+    
+}
+
+
+.btn__text{
+    text-shadow: 1px 1px 20px, 0 0 20px white;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+
+}
+
+.title{
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-left: 30px;
+    position: relative;
+    margin-bottom: 30px;
+   
+}
+
+.title::after{
+    position: absolute;
+    left: -29px;
+    bottom: -20px;
+    content: '';
+    display: block;
+    background: #434343;
+    width: 475px;
+    height: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    opacity: .3;
+    
+}
+
+.form__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    margin-left: 30px;
+
+}
+
+.form{
+    display: flex;
+
+}
+
+.checkbox{
+    display: flex;
+}
+
+.form__input{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
+.input__item{
+    margin-right: 20px;
+}
+
+.input__item p{
+    color: white;
+    font-size: 17px;
+}
+
+.input__item:last-child{
+    margin-right: 0;
+}
+
+.input{
+    height: 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+    
+}
+
+.input--login{
+    background: url('./img/userIcon.png') no-repeat 155px 2px;
+    background-size: auto 80%;
+    background-color: #dcdcdc;
+
+}
+
+
+.input--password{
+    background: url('./img/padlockIcon.png') no-repeat 155px 2px;
+    background-size: auto 80%;
+    background-color: #dcdcdc;
+
+}
+
